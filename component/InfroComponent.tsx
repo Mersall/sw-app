@@ -21,7 +21,7 @@ const InfoComponent = ({ data }: Props) => {
 
   // console.log(dataIndex);
 
-  let { films } = data.allPlanets.planets[dataIndex].filmConnection;
+  let films = data?.allPlanets?.planets[dataIndex]?.filmConnection.films;
 
   const renderFilms = () => {
     let film = films.map(
@@ -41,9 +41,9 @@ const InfoComponent = ({ data }: Props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>
-        {data.allPlanets?.planets[dataIndex]?.name}
+        {data?.allPlanets?.planets[dataIndex]?.name}
       </Text>
-      {films.length ? renderFilms() : <Text>There is no episode here</Text>}
+      {films?.length ? renderFilms() : <Text>There is no episode here</Text>}
     </View>
   );
 };

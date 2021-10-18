@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+      "textAlign": "center",
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 30,
+        "fontWeight": "600",
+        "textAlign": "center",
+      }
+    }
+  />
+  <Text>
+    There is no episode here
+  </Text>
+</View>
+`;
